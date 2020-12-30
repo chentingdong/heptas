@@ -19,8 +19,8 @@ class DocxProcessor:
 
     def translate(self, output_path=None):
         try:
-            self.translate_paragraphs()
             self.translate_tables()
+            self.translate_paragraphs()
             self.doc.save(output_path)
             logger.info("Document translation is completed.")
             return True
