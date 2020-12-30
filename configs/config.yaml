@@ -1,0 +1,4 @@
+debug:
+  logging_dir: ../logs/
+  summary_length: 100
+  logging_config: '%(levelname)s:%(message)s'
