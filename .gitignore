@@ -1,0 +1,7 @@
+# editor related
+**/.history
+**/__pycache__
+
+# project dirs skipping github
+**/data
+**/logs

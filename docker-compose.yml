@@ -1,0 +1,41 @@
+version: '3.8'
+services:
+    postgres:
+        image: postgres
+        environment:
+            - POSTGRES_USER=airflow
+            - POSTGRES_PASSWORD=airflow
+            - POSTGRES_DB=airflow
+    airflow-scheduler:
+        image: apache/airflow
+        command: scheduler
+        depends_on:
+            - postgres
+        env_file:
+            - .env
+        volumes:
+            - ./airflow/dags:/opt/airflow/dags
+            - ./airflow/logs:/opt/airflow/logs
+    airflow-web:
+        image: apache/airflow
+        entrypoint: ./scripts/start_airflow.sh
+        depends_on:
+            - postgres
+            - airflow-scheduler
+        env_file:
+            - .env
+        volumes:
+            - ./airflow/dags:/opt/airflow/dags
+            - ./airflow/logs:/opt/airflow/logs
+            - ./airflow/scripts:/opt/airflow/scripts
+        ports:
+            - "8080:8080"
+    server:
+        container_name: server
+        image: medical-translation:latest
+        volumes:
+          - ./server:/app/server
+        working_dir: /app
+        tty: true
+        command: sh -c "python server/src/server.py"
+        
