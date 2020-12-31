@@ -1,4 +1,8 @@
 debug:
-  logging_dir: ../logs/
+  logging_dir: ../logs
+  output_dir: ../data/output
   summary_length: 100
   logging_config: '%(levelname)s:%(message)s'
+format: 
+  datetime: "%Y%m%d-%H:%M:%S,%2d"
+  datetime_short: "%Y%m%d%H%M%S"
