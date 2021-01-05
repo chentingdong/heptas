@@ -2,7 +2,7 @@ SPECIAL_CASES = {
     "ee": "et",
 }
 
-LANGUAGES = {
+GOOGLE_LANGUAGES = {
     "af": "afrikaans",
     "sq": "albanian",
     "am": "amharic",

@@ -1,10 +1,12 @@
 debug:
-  logging_dir: ../logs
-  summary_length: 100
+  log_dir: ../logs
   logging_config: '%(levelname)s:%(message)s'
+  summary_length: 100
 format: 
   datetime: "%Y%m%d-%H:%M:%S,%2d"
   datetime_short: "%Y%m%d%H%M%S"
+  datetime_file: "%y%m%d-%H%M%S"
+  date: "%Y%m%d"
 files:
   input_dir: ../data/input
   output_dir: ../data/output
@@ -13,8 +15,10 @@ translate:
   engine: google 
   # model_dir is only needed when engine is biotranscribe
   model_dir: zh-en/20201120 
+  # used to map language codes, see ./*_languages.py
   sourceLanguageCode: "zh-cn"
   targetLanguageCode: "en"
-  log_file: translate.log
 report:
-  output: ../data/report
+  output_dir: ../data/report
+aws:
+  region: us-east-1

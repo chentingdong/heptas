@@ -2,13 +2,12 @@ import os
 import docx
 from ..logs.logger import translation_logger as logger
 from .translator import Translator
-from ..configs.config import cfg
-from .utils import get_outfile_path
+from ..configs.config import cfg, get_outfile_path
 
 
 class DocxProcessor:
     def __init__(self, infile=None, engine=None):
-        self.outfile_path = get_outfile_path(infile)
+        self.outfile_path = get_outfile_path(infile, engine)
         self.summary_length = cfg["debug"]["summary_length"]
         self.error_count = 0
         self.engine = engine

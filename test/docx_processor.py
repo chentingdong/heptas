@@ -2,7 +2,7 @@ from arrival.src.docx_processor import DocxProcessor
 
 
 def test_docx_processor():
-    translator_engine = "google"
+    translator_engine = "aws"
     docs = [
         "中医药现代化研究.1.docx",
     ]

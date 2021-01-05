@@ -1,21 +1,24 @@
 import os
 from typing import ByteString
 import tensorflow as tf
-from ..configs.config import cfg
-from ..configs.languages import LANGUAGES
-from .tokenizor import Tokenizer
 from googletrans import Translator as GoogleTrans
 import boto3
+from ..configs.config import cfg
+from ..configs.google_languages import GOOGLE_LANGUAGES
+from ..configs.aws_languages import AWS_LANGUAGES
+from .tokenizor import Tokenizer
+from ..logs.logger import translation_logger as logger
 
 
 class Translator(object):
     def __init__(self, model_dir=None, engine=None):
         engine = engine if engine is not None else cfg["translate"]["engine"]
+        logger.info("Translation engine {} loaded.".format(engine))
         if engine == "google":
             self.translator = GoogleTranslator()
-        elif engine == "aws":
+        elif engine == "aws" or engine == "amazon":
             self.translator = AwsTranslator()
-        elif engine == "biotranscribe":
+        elif engine == "bt" or engine == "biotranscribe":
             self.translator = BTTranslator(model_dir)
 
     def translate(self, text):
@@ -25,30 +28,44 @@ class Translator(object):
 class AwsTranslator:
     def __init__(self):
         self.translator = boto3.client(
-            service_name="translate", region_name="region", use_ssl=True
+            service_name="translate", region_name=cfg["aws"]["region"], use_ssl=True
         )
+        self.src_language = cfg["translate"]["sourceLanguageCode"]
+        self.dest_language = cfg["translate"]["targetLanguageCode"]
 
     def translate(self, text):
-        return self.translator.translate_text(
-            Text=text,
-            SourceLanguageCode=cfg["translate"]["sourceLanguageCode"],
-            TargetLanguageCode=cfg["translate"]["targetLanguageCode"],
-        )
+        if len(text) == 0:
+            return ""
+        try:
+            translation = self.translator.translate_text(
+                Text=text,
+                SourceLanguageCode=AWS_LANGUAGES[self.src_language],
+                TargetLanguageCode=AWS_LANGUAGES[self.dest_language],
+            )
+            result = translation.get("TranslatedText")
+            logger.debug(result)
+        except Exception as error:
+            logger.error("AWS translation failed, {}".format(error))
+            result = " [N/A] "
+        return result
 
 
 class GoogleTranslator:
     def __init__(self):
         self.translator = GoogleTrans()
-        self.src_language = LANGUAGES[cfg["translate"]["sourceLanguageCode"]]
-        self.dest_language = LANGUAGES[cfg["translate"]["targetLanguageCode"]]
+        self.src_language = GOOGLE_LANGUAGES[cfg["translate"]["sourceLanguageCode"]]
+        self.dest_language = GOOGLE_LANGUAGES[cfg["translate"]["targetLanguageCode"]]
 
     def translate(self, text) -> str:
+        if len(text) == 0:
+            return ""
         translation = self.translator.translate(
             text,
             src=self.src_language,
             dest=self.dest_language,
         )
-        return translation.text
+        result = translation.text
+        return result
 
 
 class BTTranslator:
