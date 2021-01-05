@@ -1,8 +1,20 @@
 debug:
   logging_dir: ../logs
-  output_dir: ../data/output
   summary_length: 100
   logging_config: '%(levelname)s:%(message)s'
 format: 
   datetime: "%Y%m%d-%H:%M:%S,%2d"
   datetime_short: "%Y%m%d%H%M%S"
+files:
+  input_dir: ../data/input
+  output_dir: ../data/output
+translate:
+  #options: google, aws, biotranscribe
+  engine: google 
+  # model_dir is only needed when engine is biotranscribe
+  model_dir: zh-en/20201120 
+  sourceLanguageCode: "zh-cn"
+  targetLanguageCode: "en"
+  log_file: translate.log
+report:
+  output: ../data/report

@@ -1,26 +1,30 @@
 import os
 import docx
-from googletrans import Translator
 from ..logs.logger import translation_logger as logger
+from .translator import Translator
 from ..configs.config import cfg
 from .utils import get_outfile_path
 
 
 class DocxProcessor:
-    def __init__(self, infile_path):
-        self.infile_path = infile_path
-        self.outfile_path = get_outfile_path(infile_path)
+    def __init__(self, infile=None, engine=None):
+        self.outfile_path = get_outfile_path(infile)
         self.summary_length = cfg["debug"]["summary_length"]
-        self.translator = Translator()
         self.error_count = 0
-        self.load_doc(infile_path)
+        self.engine = engine
+        self.translator = Translator(engine=engine)
+        if engine is None:
+            self.engine = cfg["translate"]["engine"]
+        self.load_doc(infile)
 
-    def load_doc(self, file_path):
+    def load_doc(self, infile):
         logger.info("Loading document...")
-        self.doc = docx.Document(file_path)
+        infile_path = "{dir}/{file}".format(dir=cfg["files"]["input_dir"], file=infile)
+        self.infile_path = infile_path
+        self.doc = docx.Document(infile_path)
         self.paragraphs = self.doc.paragraphs
 
-    def translate(self):
+    def translate_doc(self):
         try:
             self.translate_tables()
             self.translate_paragraphs()
@@ -49,10 +53,7 @@ class DocxProcessor:
             for i in range(len(inline)):
                 if inline[i].text is None:
                     continue
-                translation = self.translator.translate(
-                    inline[i].text, src="chinese (simplified)", dest="en"
-                )
-                inline[i].text = translation.text
+                inline[i].text = self.translator.translate(inline[i].text)
         except Exception as error:
             self.error_count += 1
             summary = paragraph.text[: self.summary_length] + "..."

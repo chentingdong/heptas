@@ -7,35 +7,34 @@ from airflow.operators.bash import BashOperator
 from airflow.utils.dates import days_ago
 
 default_args = {
-    'owner': 'biotranscribe',
-    'depends_on_past': False,
-    'email': ['tingdong.chen@biotranscribe.com', 'steven.xu@biotranscribe.com'],
-    'email_on_failure': False,
-    'email_on_retry': False,
-    'retries': 1,
-    'retry_delay': timedelta(minutes=5),
-
+    "owner": "biotranscribe",
+    "depends_on_past": False,
+    "email": ["tingdong.chen@biotranscribe.com", "steven.xu@biotranscribe.com"],
+    "email_on_failure": False,
+    "email_on_retry": False,
+    "retries": 1,
+    "retry_delay": timedelta(minutes=5),
 }
 
 dag = DAG(
-    'Translation model training',
+    "Translation model training",
     default_args=default_args,
-    description='DAG for training Chinese-English translation model',
+    description="DAG for training Chinese-English translation model",
     schedule_interval=timedelta(days=1),
     start_date=days_ago(2),
-    tags=['translation'],
+    tags=["translation"],
 )
 
 t1 = BashOperator(
-    task_id='print_date',
-    bash_command='date',
+    task_id="print_date",
+    bash_command="date",
     dag=dag,
 )
 
 t2 = BashOperator(
-    task_id='sleep',
+    task_id="sleep",
     depends_on_past=False,
-    bash_command='sleep 5',
+    bash_command="sleep 5",
     retries=3,
     dag=dag,
 )
@@ -62,10 +61,10 @@ templated_command = """
 """
 
 t3 = BashOperator(
-    task_id='templated',
+    task_id="templated",
     depends_on_past=False,
     bash_command=templated_command,
-    params={'my_param': 'Parameter I passed in'},
+    params={"my_param": "Parameter I passed in"},
     dag=dag,
 )
 # [END jinja_template]

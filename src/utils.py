@@ -3,16 +3,16 @@ from datetime import datetime
 from ..configs.config import cfg
 
 
-def get_outfile_path(infile_path):
-    dir = cfg["debug"]["output_dir"]
-    basename = os.path.basename(infile_path)
-    filename, ext = os.path.splitext(basename)
-    timestamp = get_now()
-    outfile_path = "{dir}/{filename}.{timestamp}{ext}".format(**locals())
+def get_outfile_path(infile):
+    dir = cfg["files"]["output_dir"]
+    basename = os.path.basename(infile)
+    file, ext = os.path.splitext(basename)
+    timestamp = now()
+    outfile_path = "{dir}/{file}.{timestamp}{ext}".format(**locals())
     return outfile_path
 
 
-def get_now(format=None):
+def now(format=None):
     if format is None:
         format = cfg["format"]["datetime_short"]
 

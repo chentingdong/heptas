@@ -13,12 +13,12 @@ class DocumentProcessor:
 
     def extract_information(self):
         txt = """
-      Information about {file_path}
-      Author: {author}
-      Subject: {title}
-      Number of Pages: {pages}
-      content 0: {content}
-    """.format(
+            Information about {file_path}
+            Author: {author}
+            Subject: {title}
+            Number of Pages: {pages}
+            content 0: {content}
+            """.format(
             file_path=self.file_path,
             author=self.information.author,
             title=self.information.title,

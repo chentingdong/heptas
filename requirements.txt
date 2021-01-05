@@ -1,0 +1,5 @@
+python-docx==0.8.10
+googletrans==4.0.0rc1
+tensorflow==2.3.1
+pyonmttok==1.23.0
+OpenNMT-py==1.2.0
