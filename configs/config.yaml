@@ -1,6 +1,7 @@
 debug:
+  level: 10
   log_dir: ../logs
-  logging_config: '%(levelname)s:%(message)s'
+  logging_format: "[%(asctime)s - %(name)s - line %(lineno)s - %(levelname)s] %(message)s"
   summary_length: 100
 format: 
   datetime: "%Y%m%d-%H:%M:%S,%2d"
@@ -10,6 +11,7 @@ format:
 files:
   input_dir: ../data/input
   output_dir: ../data/output
+  report_dir: ../data/report
 translate:
   #options: google, aws, biotranscribe
   engine: google 

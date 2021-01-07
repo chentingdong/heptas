@@ -1,8 +1,9 @@
 import os
 import docx
-from ..logs.logger import translation_logger as logger
+import json
+from .logger import translation_logger as logger
 from .translator import Translator
-from ..configs.config import cfg, get_outfile_path
+from ..configs.config import cfg, get_infile_path, get_outfile_path
 
 
 class DocxProcessor:
@@ -18,13 +19,17 @@ class DocxProcessor:
 
     def load_doc(self, infile):
         logger.info("Loading document...")
-        infile_path = "{dir}/{file}".format(dir=cfg["files"]["input_dir"], file=infile)
+        infile_path = get_infile_path(infile)
         self.infile_path = infile_path
         self.doc = docx.Document(infile_path)
         self.paragraphs = self.doc.paragraphs
 
+    def set_style(self):
+        self.doc.styles["Normal"].font.name = "Times"
+
     def translate_doc(self):
         try:
+            self.set_style()
             self.translate_tables()
             self.translate_paragraphs()
             print(self.outfile_path)
@@ -35,24 +40,16 @@ class DocxProcessor:
             logger.error("Translation failed: {}".format(error))
             return False
 
-    def translate_paragraphs(self, start=None, end=None):
-        if start is None:
-            start = 0
-        if end is None:
-            end = len(self.paragraphs)
-
+    def translate_paragraphs(self):
         logger.info("Started translating paragraphs...")
-        for i, paragraph in enumerate(self.paragraphs):
+        for paragraph in self.paragraphs:
             self.translate_paragraph_one(paragraph)
         logger.info("Finished translating paragraphs...")
 
     def translate_paragraph_one(self, paragraph):
         try:
-            inline = paragraph.runs
-            for i in range(len(inline)):
-                if inline[i].text is None:
-                    continue
-                inline[i].text = self.translator.translate(inline[i].text)
+            if paragraph.text != "":
+                paragraph.text = self.translator.translate(paragraph.text)
         except Exception as error:
             self.error_count += 1
             summary = paragraph.text[: self.summary_length] + "..."

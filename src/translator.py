@@ -7,7 +7,7 @@ from ..configs.config import cfg
 from ..configs.google_languages import GOOGLE_LANGUAGES
 from ..configs.aws_languages import AWS_LANGUAGES
 from .tokenizor import Tokenizer
-from ..logs.logger import translation_logger as logger
+from .logger import translation_logger as logger
 
 
 class Translator(object):
@@ -43,7 +43,6 @@ class AwsTranslator:
                 TargetLanguageCode=AWS_LANGUAGES[self.dest_language],
             )
             result = translation.get("TranslatedText")
-            logger.debug(result)
         except Exception as error:
             logger.error("AWS translation failed, {}".format(error))
             result = " [N/A] "
