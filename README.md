@@ -1,5 +1,27 @@
-
-“We don't know if they understand the difference between a weapon and a tool.” - Arrival 2016
-
 # project
-Another translation platform. 
+Name heptas comes from the movie "Arrival", 2016. 
+# Install
+For local development, we use venv. Python version 3.7.3.
+```
+source /path/to/virtualenv/python3.7/bin/activate
+pip install -r requirements.txt
+```
+Planning dockerized version when needed.
+# Run
+translation and reporting run with test scripts.
+
+## NLP Model Training
+This part is currently in another repo, will be rewritten.
+
+## Translation
+```
+cd test
+pytest -s docx_processor.py
+```
+
+## Reporting
+This requires translation process first, otherwise it will report failure.
+```
+cd test
+pytest -s project_reporting.py
+```

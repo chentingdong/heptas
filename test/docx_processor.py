@@ -1,4 +1,4 @@
-from arrival.src.docx_processor import DocxProcessor
+from ..src.docx_processor import DocxProcessor
 
 
 def test_docx_processor():
