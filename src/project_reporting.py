@@ -16,20 +16,21 @@ class DocxReporting:
             project = self.make_project_one(doc)
             self.projects.append(project)
             
-    def make_project_one(self, filename):
+    def make_project_one(self, doc):
         project = DocProject()
+        filename = doc['file']
         project.infile_name = filename
-        project.infile_path = get_infile_path(filename)
-        doc = docx.Document(project.infile_path)
-        project.infile_size = os.path.getsize(project.infile_path)
-        project.page_count = self.count_pages(doc)
-        project.wordcount_all, project.wordcount_word = self.count_words(doc)
-        project.md5sum = self.get_md5sum(project.infile_path)
+        infile_path = get_infile_path(filename)
+        docxObj = docx.Document(infile_path)
+        project.infile_size = os.path.getsize(infile_path)
+        project.page_count = self.count_pages(docxObj)
+        project.wordcount_all, project.wordcount_word = self.count_words(docxObj)
+        project.md5sum = self.get_md5sum(infile_path)
         
-        project.outfile_path = get_outfile_path(filename)
-        project.outfile_name = os.path.basename(project.outfile_path)
-        project.outfile_size = os.path.getsize(project.outfile_path)
-        project.billing_status = "Finished"
+        outfile_path = get_outfile_path(filename, targetLanguageCode=doc['targetLanguageCode'])
+        project.outfile_name = os.path.basename(outfile_path)
+        project.outfile_size = os.path.getsize(outfile_path)
+        project.billing_status = ""
         return project
     
     def get_md5sum(self, filepath):

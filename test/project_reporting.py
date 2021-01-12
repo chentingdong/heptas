@@ -6,10 +6,26 @@ def test_docx_reporting():
         'name': 'demo 01',
         'engine': 'aws',
         'docs': [
-            "NC PD Report Sample.docx",
-            "NC Tox Report Sample.docx",
-            "2013106976997.docx",
-            "2014101200325.docx"
+            {
+                "sourceLanguageCode": "zh-cn",
+                "targetLanguageCode": "en",
+                "file": "NC PD Report Sample.docx",
+            },
+            {
+                "sourceLanguageCode": "en",
+                "targetLanguageCode": "zh-cn",
+                "file": "NC Tox Report Sample.docx",
+            },
+            {
+                "sourceLanguageCode": "zh-cn",
+                "targetLanguageCode": "en",
+                "file": "2013106976997.docx",
+            },
+            {
+                "sourceLanguageCode": "zh-cn",
+                "targetLanguageCode": "en",
+                "file": "2014101200325.docx",
+            },
         ]
     }
     
