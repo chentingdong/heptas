@@ -8,12 +8,27 @@ from ..configs.config import cfg, get_infile_path, get_outfile_path
 
 
 class DocxProcessor:
-    def __init__(self, infile=None, engine=None):
-        self.outfile_path = get_outfile_path(infile, engine)
+    # TODO: language code variables should move to db related to project/doc
+    def __init__(
+        self,
+        infile=None,
+        engine=None,
+        sourceLanguageCode=cfg["translate"]["sourceLanguageCode"],
+        targetLanguageCode=cfg["translate"]["targetLanguageCode"],
+    ):
+        self.outfile_path = get_outfile_path(
+            infile, engine, targetLanguageCode=targetLanguageCode
+        )
         self.summary_length = cfg["debug"]["summary_length"]
         self.error_count = 0
         self.engine = engine
-        self.translator = Translator(engine=engine)
+        self.sourceLanguageCode = sourceLanguageCode
+        self.targetLanguageCode = targetLanguageCode
+        self.translator = Translator(
+            engine=engine,
+            sourceLanguageCode=sourceLanguageCode,
+            targetLanguageCode=targetLanguageCode,
+        )
         if engine is None:
             self.engine = cfg["translate"]["engine"]
         self.load_doc(infile)
@@ -31,7 +46,7 @@ class DocxProcessor:
             self.translate_paragraphs()
             print(self.outfile_path)
             self.doc.save(self.outfile_path)
-            logger.info("Translation completed: {}".format(self.outfile_path))
+            logger.info("Translation completed, \ninput: {}\noutput: {}".format(self.infile_path, self.outfile_path))
             return True
         except Exception as error:
             logger.error("Translation failed: {}".format(error))
@@ -46,10 +61,16 @@ class DocxProcessor:
     def translate_paragraph_one(self, paragraph):
         try:
             for inline in paragraph.runs:
-                inline.font.name = 'Times'
-                inline.font.size = Pt(16)
-                if inline.text != '':
-                    inline.text = self.translator.translate(inline.text)
+                if self.targetLanguageCode == 'en':
+                    inline.font.name = "Times" 
+                    # inline.font.size = Pt(16)
+                if self.targetLanguageCode == 'zh-cn':
+                    inline.font.name = "songti TC"
+                if inline.text != "":
+                    inline.text = self.translator.translate(
+                        inline.text
+                    )
+                inline.text = ' ' + inline.text + ' '
         except Exception as error:
             self.error_count += 1
             summary = paragraph.text[: self.summary_length] + "..."

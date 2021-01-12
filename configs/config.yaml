@@ -15,7 +15,7 @@ files:
   font-name: 'Times' 
 translate:
   #options: google, aws, biotranscribe
-  engine: google 
+  engine: aws 
   # model_dir is only needed when engine is biotranscribe
   model_dir: zh-en/20201120 
   # used to map language codes, see ./*_languages.py

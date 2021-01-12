@@ -11,13 +11,21 @@ from .logger import translation_logger as logger
 
 
 class Translator(object):
-    def __init__(self, model_dir=None, engine=None):
-        engine = engine if engine is not None else cfg["translate"]["engine"]
+    def __init__(
+        self,
+        model_dir=None,
+        engine=cfg["translate"]["engine"],
+        sourceLanguageCode=cfg["translate"]["sourceLanguageCode"],
+        targetLanguageCode=cfg["translate"]["targetLanguageCode"],
+    ):
         logger.info("Translation engine {} loaded.".format(engine))
         if engine == "google":
             self.translator = GoogleTranslator()
         elif engine == "aws" or engine == "amazon":
-            self.translator = AwsTranslator()
+            self.translator = AwsTranslator(
+                sourceLanguageCode=sourceLanguageCode,
+                targetLanguageCode=targetLanguageCode,
+            )
         elif engine == "bt" or engine == "biotranscribe":
             self.translator = BTTranslator(model_dir)
 
@@ -26,12 +34,18 @@ class Translator(object):
 
 
 class AwsTranslator:
-    def __init__(self):
+    def __init__(
+        self,
+        sourceLanguageCode=cfg["translate"]["sourceLanguageCode"],
+        targetLanguageCode=cfg["translate"]["targetLanguageCode"],
+    ):
         self.translator = boto3.client(
-            service_name="translate", region_name=cfg["aws"]["region"], use_ssl=True
+            service_name="translate",
+            region_name=cfg["aws"]["region"],
+            use_ssl=True,
         )
-        self.src_language = cfg["translate"]["sourceLanguageCode"]
-        self.dest_language = cfg["translate"]["targetLanguageCode"]
+        self.sourceLanguageCode = AWS_LANGUAGES[sourceLanguageCode]
+        self.targetLanguageCode = AWS_LANGUAGES[targetLanguageCode]
 
     def translate(self, text):
         if len(text) == 0:
@@ -39,8 +53,8 @@ class AwsTranslator:
         try:
             translation = self.translator.translate_text(
                 Text=text,
-                SourceLanguageCode=AWS_LANGUAGES[self.src_language],
-                TargetLanguageCode=AWS_LANGUAGES[self.dest_language],
+                SourceLanguageCode=self.sourceLanguageCode,
+                TargetLanguageCode=self.targetLanguageCode
             )
             result = translation.get("TranslatedText")
         except Exception as error:
@@ -50,18 +64,22 @@ class AwsTranslator:
 
 
 class GoogleTranslator:
-    def __init__(self):
+    def __init__(
+        self,
+        sourceLanguageCode=cfg["translate"]["sourceLanguageCode"],
+        targetLanguageCode=cfg["translate"]["targetLanguageCode"],
+    ):
         self.translator = GoogleTrans()
-        self.src_language = GOOGLE_LANGUAGES[cfg["translate"]["sourceLanguageCode"]]
-        self.dest_language = GOOGLE_LANGUAGES[cfg["translate"]["targetLanguageCode"]]
+        self.sourceLanguageCode = GOOGLE_LANGUAGES[sourceLanguageCode]
+        self.targetLanguageCode = GOOGLE_LANGUAGES[targetLanguageCode]
 
     def translate(self, text) -> str:
         if len(text) == 0:
             return ""
         translation = self.translator.translate(
             text,
-            src=self.src_language,
-            dest=self.dest_language,
+            src=self.sourceLanguageCode,
+            dest=self.targetLanguageCode,
         )
         result = translation.text
         return result
