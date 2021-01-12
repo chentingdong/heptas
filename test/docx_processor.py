@@ -11,7 +11,7 @@ def test_docx_processor():
         ]
     }
 
-    for doc in project.docs:
-        processor = DocxProcessor(doc, engine=project.engine)
+    for doc in project['docs']:
+        processor = DocxProcessor(doc, engine=project['engine'])
         result = processor.translate_doc()
         assert result == True

@@ -11,6 +11,6 @@ def test_docx_reporting():
         ]
     }
     
-    reporter = DocxReporting(project, project.docs)
+    reporter = DocxReporting(project['name'], project['docs'])
     result = reporter.report_csv()
     assert result == True
