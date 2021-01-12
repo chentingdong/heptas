@@ -12,6 +12,7 @@ files:
   input_dir: ../data/input
   output_dir: ../data/output
   report_dir: ../data/report
+  font-name: 'Times' 
 translate:
   #options: google, aws, biotranscribe
   engine: google 

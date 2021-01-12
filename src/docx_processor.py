@@ -1,5 +1,6 @@
 import os
 import docx
+from docx.shared import Pt
 import json
 from .logger import translation_logger as logger
 from .translator import Translator
@@ -24,12 +25,8 @@ class DocxProcessor:
         self.doc = docx.Document(infile_path)
         self.paragraphs = self.doc.paragraphs
 
-    def set_style(self):
-        self.doc.styles["Normal"].font.name = "Times"
-
     def translate_doc(self):
         try:
-            self.set_style()
             self.translate_tables()
             self.translate_paragraphs()
             print(self.outfile_path)
@@ -48,8 +45,11 @@ class DocxProcessor:
 
     def translate_paragraph_one(self, paragraph):
         try:
-            if paragraph.text != "":
-                paragraph.text = self.translator.translate(paragraph.text)
+            for inline in paragraph.runs:
+                inline.font.name = 'Times'
+                inline.font.size = Pt(16)
+                if inline.text != '':
+                    inline.text = self.translator.translate(inline.text)
         except Exception as error:
             self.error_count += 1
             summary = paragraph.text[: self.summary_length] + "..."
