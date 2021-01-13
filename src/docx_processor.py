@@ -65,7 +65,7 @@ class DocxProcessor:
                     paragraph.style.font.name = 'Times'
                 if self.targetLanguageCode == 'zh-cn':
                     paragrah.style.font.name = "songti TC"
-                if paragraph.tet != "":
+                if paragraph.text != "":
                     paragraph.text = self.translator.translate(paragraph.text)
         except Exception as error:
             self.error_count += 1
