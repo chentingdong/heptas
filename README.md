@@ -27,15 +27,27 @@ Planning dockerized version when needed.
 * build docker image. 
 ```
 docker build -t heptas ./docker
+docker images
 ```
+run docker images to get a list of images in the system, you should see the images just built: heptas:latest
+
 * start the container in daemon mode to keep container alive 
 ```
 docker-compose -f docker/docker-compose.yml up -d
 ```
+create a .env file in heptas/ dir. It (will) contains credentials so we do not commit it to github.
+to turn down the service:
+```
+docker-compose -f docker/docker-compose.yml down
+```
+
 * exec the container to run the command inside.
 ```
+docker ps
 docker exec -it $(docker ps |grep heptas|awk '{print $1}') zsh
 ```
+run docker ps to make sure you have the docker container running.
+
 We should manually copy the data directories and files, as they are not committed to github.
 
 We can edit codes in preferred editor, then run the command inside docker container.
