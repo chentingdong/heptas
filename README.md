@@ -53,10 +53,15 @@ We should manually copy the data directories and files, as they are not committe
 We can edit codes in preferred editor, then run the command inside docker container.
 
 # Run
-For now, translation and reporting run with pytest scripts in tests.
+For now, translation and reporting run with pytest scripts in tests. Example:
+```
+cd test
+pytest -s docx_processor.py
+test pytest -s project_reporting.py
+```
 
 ## NLP Model Training
-This part is currently in another repo, will be rewritten.
+This part is currently in another repo, will be rewritten. 
 
 ## Translation
 ```
