@@ -57,7 +57,7 @@ For now, translation and reporting run with pytest scripts in tests. Example:
 ```
 cd test
 pytest -s docx_processor.py
-test pytest -s project_reporting.py
+pytest -s project_reporting.py
 ```
 
 ## NLP Model Training
