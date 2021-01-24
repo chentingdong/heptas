@@ -60,17 +60,14 @@ class DocxProcessor:
 
     def translate_paragraph_one(self, paragraph):
         try:
-            for inline in paragraph.runs:
+            if paragraph.text != "":
                 if self.targetLanguageCode == 'en':
-                    inline.font.name = "Times" 
-                    # inline.font.size = Pt(16)
-                if self.targetLanguageCode == 'zh-cn':
-                    inline.font.name = "songti TC"
-                if inline.text != "":
-                    inline.text = self.translator.translate(
-                        inline.text
-                    )
-                inline.text = ' ' + inline.text + ' '
+                    paragraph.style.font.name = 'Times'
+                elif self.targetLanguageCode == 'zh-cn':
+                    paragraph.style.font.name = "songti TC"
+
+                paragraph.text = self.translator.translate(paragraph.text)
+
         except Exception as error:
             self.error_count += 1
             summary = paragraph.text[: self.summary_length] + "..."
