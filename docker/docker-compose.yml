@@ -40,6 +40,7 @@ services:
           - ../logs:/app/logs
           - ../data:/app/data
           - ~/.aws/:/root/.aws:ro
+          - ~/.google/:/root/.google:ro
         env_file: ../.env
         working_dir: /app
         tty: true
