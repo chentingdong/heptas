@@ -37,8 +37,8 @@ services:
           - ../src:/app/src
           - ../configs:/app/configs
           - ../test:/app/test
-          # - ../logs:/app/logs
-          # - ../data:/app/data
+          - ../logs:/app/logs
+          - ../data:/app/data
           - ~/.aws/:/root/.aws:ro
         env_file: ../.env
         working_dir: /app
