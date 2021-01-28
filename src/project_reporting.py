@@ -39,7 +39,8 @@ class DocxReporting:
         md5_hash.update(content)
         digest = md5_hash.hexdigest()
         return digest
-    
+
+    # TODO: Need to count tables     
     def count_words(self, doc):
         all_counts, word_counts = 0, 0
         for paragraph in doc.paragraphs:
