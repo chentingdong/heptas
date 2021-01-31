@@ -8,7 +8,8 @@ from ..configs.google_languages import GOOGLE_LANGUAGES
 from ..configs.aws_languages import AWS_LANGUAGES
 from .tokenizor import Tokenizer
 from .logger import translation_logger as logger
-
+import six
+from google.cloud import translate_v2 as GCTranslate
 
 class Translator(object):
     def __init__(
@@ -24,13 +25,45 @@ class Translator(object):
         elif engine == "aws" or engine == "amazon":
             self.translator = AwsTranslator(
                 sourceLanguageCode=sourceLanguageCode,
-                targetLanguageCode=targetLanguageCode,
+                targetLanguageCode=targetLanguageCode
             )
+        elif engine == "gc" or engine == 'Google Cloud':
+            self.translator = GoogleCloudTranslator(
+                sourceLanguageCode=sourceLanguageCode,
+                targetLanguageCode=targetLanguageCode
+            )
+
         elif engine == "bt" or engine == "biotranscribe":
             self.translator = BTTranslator(model_dir)
 
     def translate(self, text):
         return self.translator.translate(text)
+
+class GoogleCloudTranslator:
+    def __init__(
+        self,
+        sourceLanguageCode=cfg["translate"]["sourceLanguageCode"],
+        targetLanguageCode=cfg["translate"]["targetLanguageCode"],
+    ):
+        self.translator = GCTranslate.Client()
+        self.sourceLanguageCode = sourceLanguageCode
+        self.targetLanguageCode = targetLanguageCode
+
+    def translate(self, text) -> str:
+        if len(text) == 0:
+            return ""
+        try:
+            #logger.debug("Target Language = {}".format(self.targetLanguageCode))
+            translation = self.translator.translate(
+                text,
+                target_language=self.targetLanguageCode
+            )
+            result = translation["translatedText"]
+        except Exception as error:
+            logger.error("GOOGLE Cloud translation failed, {}".format(error))
+            result = " [N.A] "
+        return result
+
 
 
 class AwsTranslator:

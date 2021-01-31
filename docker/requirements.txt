@@ -4,9 +4,10 @@ OpenNMT-py==1.2.0
 OpenNMT-tf==2.14.0
 MicroTokenizer==0.19.2
 python-docx==0.8.10
+google-cloud-translate==2.0.1
 googletrans==4.0.0rc1
 boto3==1.16.52
 pytesseract==0.3.7
 pytest==6.2.1
 pyyaml==5.3.1
-# Django==3.1.4 # django to run api server, may not be a good choice.
+Django==3.1.4 # django to run api server, may not be a good choice.
