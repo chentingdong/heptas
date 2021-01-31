@@ -41,14 +41,16 @@ to turn down the service:
 docker-compose -f docker/docker-compose.yml down
 ```
 
-* exec the container to run the command inside.
+* exec into the container to run the command inside.
 ```
 docker ps
 docker exec -it $(docker ps |grep heptas|awk '{print $1}') zsh
 ```
-run docker ps to make sure you have the docker container running.
+Run docker ps to make sure you have the docker container running.
 
-We should manually copy the data directories and files, as they are not committed to github.
+We should manually copy the data directories and files, as they are not committed to github. 
+
+We should manually create the logs directory too.
 
 We can edit codes in preferred editor, then run the command inside docker container.
 
@@ -59,9 +61,9 @@ cd test
 pytest -s docx_processor.py
 test pytest -s project_reporting.py
 ```
-
+In the future, this can be packaged to scripts/, or provide api server to support UI.
 ## NLP Model Training
-This part is currently in another repo, will be rewritten. 
+This part is currently in another repo, will be rewritten when time is ready. 
 
 ## Translation
 ```
