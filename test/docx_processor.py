@@ -20,7 +20,7 @@ def test_fixture():
     docs=["fil1.docx", "file2.docx"]
     project = generate_project_config("test_fixture", "gc", docs, "zh-cn", "en")
     assert project["name"] == "test_fixture"
-    assert project["engine"] == 'aws'
+    assert project["engine"] == 'gc'
     assert project["docs"][0]["sourceLanguageCode"] == 'zh-cn'
     assert project["docs"][1]["sourceLanguageCode"] == 'zh-cn'
 
@@ -28,13 +28,13 @@ def test_fixture():
 @pytest.fixture
 def project_config_pro3():
     docs = [
-            '2.4 非临床研究概述-LY03009-20210204.docx',
-            '2.6 非临床试验文字和列表总结-LY03009-20210122.docx',
-            '2.6.1 前言-LY03009-20210122.docx',
-            '2.6.2 药理学文字总结-汇总-LY03009-20210122.docx',
-            '2.6.3 药理学列表总结-LY03009-20210122.docx',
-            '2.6.6 毒理学文字总结 -LY03009-20210122.docx',
-            '2.6.7 毒理学试验列表-LY03009-20210122.doc'
+            #'2.4 非临床研究概述-LY03009-20210204.docx',
+            #'2.6 非临床试验文字和列表总结-LY03009-20210122.docx',
+            #'2.6.1 前言-LY03009-20210122.docx',
+            #'2.6.2 药理学文字总结-汇总-LY03009-20210122.docx',
+            #'2.6.3 药理学列表总结-LY03009-20210122.docx',
+            #'2.6.6 毒理学文字总结 -LY03009-20210122.docx',
+            '2.6.7 毒理学试验列表-LY03009-20210122.docx'
     ]
 
     return generate_project_config("project 3", "gc", docs, 'zh-cn', 'en')
