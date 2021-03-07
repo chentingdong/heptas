@@ -4,6 +4,7 @@ import docx
 
 
 filepath = '../data/input/2.6.7 毒理学试验列表-LY03009-20210122.docx'
+filepath = '2.6.7 毒理学试验列表-LY03009-20210122.tbtest.docx' 
 
 docx = docx.Document(filepath)
 
