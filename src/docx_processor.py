@@ -67,7 +67,7 @@ class DocxProcessor:
             self.translate_element_one_et(paragraph._element)
         logger.info("Finished translating paragraphs...")
 
-    @deprecated(verssion='1.0', reason='changed')
+    #@deprecated(verssion='1.0', reason='changed')
     def translate_paragraphs(self):
         logger.info("Started translating paragraphs...")
         for paragraph in self.paragraphs:
@@ -108,8 +108,8 @@ class DocxProcessor:
                 if text in self.dict.keys():
                     text_out = self.dict[text]
                 else: 
-                    text_out = "output = " + text
-                    #text_out  = self.translator.translate(text)
+                    #text_out = "output = " + text
+                    text_out  = self.translator.translate(text)
                     self.dict[text] = text_out
                 e_text.text = text_out
                 e_element.append(run)
@@ -121,15 +121,20 @@ class DocxProcessor:
             logger.error("{}: {}\n{}".format(self.error_count, error, summary))
     
     def translate_hyperlink_et(self):
-        for hl in self.doc._elemment.iter(DOCX_NAMESPACES['HYPERLINK']):
+        logger.info("Started translating hyperlinks...")
+        for hl in self.doc.element.iter(DOCX_NAMESPACES['HYPERLINK']):
             self.translate_element_one_et(hl)
+        logger.info("Finished translating hyperlinks...")
+
 
     def translate_textbox_et(self):
+        logger.info("Started translating textboxes...")
         for txbx in self.doc.element.iter(DOCX_NAMESPACES["TEXTBOX_CONTENT"]):
             for para in txbx.iter(DOCX_NAMESPACES['PARAGRAPH']):
                 self.translate_element_one_et(txbx)
+        logger.info("Finished translating textboxes...")
                 
-    @deprecated(version='1.0', reason='changed')
+    #@deprecated(version='1.0', reason='changed')
     def translate_table_one(self, e_table):
         '''
         e_table is element object from lxml
@@ -144,7 +149,7 @@ class DocxProcessor:
             self.translate_table_one(table._element)
         logger.info("Finished translating tables...")
 
-    @deprecated(version='1.0', reason='changed')
+    #@deprecated(version='1.0', reason='changed')
     def translate_paragraph_one(self, paragraph):
         try:
             if paragraph.text != "":
@@ -160,7 +165,7 @@ class DocxProcessor:
             summary = paragraph.text[: self.summary_length] + "..."
             logger.error("{}: {}\n{}".format(self.error_count, error, summary))
 
-    @deprecated(version='1.0', reason='changed')
+    #@deprecated(version='1.0', reason='changed')
     def translate_tables(self):
         logger.info("Started translating tables...")
         for table in self.doc.tables:

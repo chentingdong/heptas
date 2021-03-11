@@ -2,9 +2,9 @@ from ..src.docx_processor import DocxProcessor
 from ..configs.config import generate_project_config
 import pytest
 
-def test_docx_processor(project_config_pro3):
+def test_docx_processor(project_config_pro4):
 
-    project = project_config_pro3
+    project = project_config_pro4
     for doc in project["docs"]:
         processor = DocxProcessor(
             doc["file"],
@@ -23,6 +23,14 @@ def test_fixture():
     assert project["engine"] == 'gc'
     assert project["docs"][0]["sourceLanguageCode"] == 'zh-cn'
     assert project["docs"][1]["sourceLanguageCode"] == 'zh-cn'
+
+@pytest.fixture
+def project_config_pro4():
+    docs = [
+            'XKH001_China PIND (2.4 NC Overview)_For translation use only - Part 1.docx'
+            ]
+
+    return generate_project_config("project 4", 'gc', docs, 'en', 'zh-cn')
 
 
 @pytest.fixture
