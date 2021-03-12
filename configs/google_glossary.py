@@ -59,3 +59,4 @@ def delete_glossary(
 
 list_glossaries(415574831314)
 get_glossary(415574831314, 'bt-zh-en-LetPub-glossary')
+delete_glossary(415574831314, 'bt-zh-en-LetPub-glossary')

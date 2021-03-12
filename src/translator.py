@@ -58,9 +58,17 @@ class GoogleCloudTranslator:
             g = self.translator.glossary_path(
                 GOOGLE_GLOSSARY["project_id"],
                 GOOGLE_GLOSSARY["location"],
-                GOOGLE_GLOSSARY["glossary_id"]
+                glossary,
                 )
-            g_config = GCTranslate.TranslateTextGlossaryConfig(glossary=g)
+            self.g_config = GCTranslate.TranslateTextGlossaryConfig(glossary=g)
+        else:
+            g = self.translator.glossary_path(
+                GOOGLE_GLOSSARY["project_id"],
+                GOOGLE_GLOSSARY["location"],
+                GOOGLE_GLOSSARY["glossary_id"],
+                )
+            self.g_config = GCTranslate.TranslateTextGlossaryConfig(glossary=g)
+
 
     def translate(self, text) -> str:
         if len(text) == 0:
@@ -72,10 +80,10 @@ class GoogleCloudTranslator:
                     "target_language_code": self.targetLanguageCode,
                     "source_language_code": self.sourceLanguageCode,
                     "parent": GOOGLE_GLOSSARY['parent'],
-                    "glossary_config": g_config,
+                    "glossary_config": self.g_config,
                     }
                 )
-            result = response
+            result = response.glossary_translations[0].translated_text
 
         except Exception as error:
             logger.error("GOOGLE Cloud translation failed, {}".format(error))

@@ -1,8 +1,8 @@
 {
   "name":"projects/415574831314/locations/us-central1/glossaries/bt-zh-en-LetPub-glossary",
   "languagePair": {
-    "sourceLanguageCode": "en",
-    "targetLanguageCode": "zh-cn"
+    "sourceLanguageCode": "zh-cn",
+    "targetLanguageCode": "en"
     },
   "inputConfig": {
     "gcsSource": {

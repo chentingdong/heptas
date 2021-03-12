@@ -23,10 +23,10 @@ def test_translate_with_glossary(text='今晚的月亮真圆。'):
     print(result)
     print("\n")
 
-    for translation in result.translations:
-        print("Translated text: {}".format(translation.translated_text))
-    for translation in result.glossary_translations:
-        print("\t {}".format(translation.translated_text))
+    #for translation in result.translations:
+    #    print("Translated text: {}".format(translation.translated_text))
+    #for translation in result.glossary_translations:
+    #    print("\t {}".format(translation.translated_text))
 
     assert True
 
