@@ -4,7 +4,8 @@ OpenNMT-py==1.2.0
 OpenNMT-tf==2.14.0
 MicroTokenizer==0.19.2
 python-docx==0.8.10
-google-cloud-translate==2.0.1
+google-cloud-translate==3.4.0
+#google-cloud-translate==2.0.1
 googletrans==4.0.0rc1
 boto3==1.16.52
 pytesseract==0.3.7
