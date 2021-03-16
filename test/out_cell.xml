@@ -1,0 +1,1153 @@
+tables = 47
+	rows = 18
+<w:tr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidTr="00313E9F">
+  <w:trPr>
+    <w:gridAfter w:val="1"/>
+    <w:wAfter w:w="496" w:type="dxa"/>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="5233" w:type="dxa"/>
+      <w:vAlign w:val="center"/>
+      <w:hideMark/>
+    </w:tcPr>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="00313E9F">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="1756"/>
+        </w:tabs>
+        <w:ind w:right="42"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="30"/>
+          <w:szCs w:val="30"/>
+        </w:rPr>
+      </w:pPr>
+      <w:bookmarkStart w:id="0" w:name="_GoBack"/>
+      <w:bookmarkEnd w:id="0"/>
+      <w:r w:rsidRPr="008D33A6">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="30"/>
+          <w:szCs w:val="30"/>
+        </w:rPr>
+        <w:t>申请分类：临床</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="3332" w:type="dxa"/>
+      <w:gridSpan w:val="2"/>
+      <w:vAlign w:val="center"/>
+      <w:hideMark/>
+    </w:tcPr>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="006D2E75">
+      <w:pPr>
+        <w:ind w:right="-108"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="30"/>
+          <w:szCs w:val="30"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="008D33A6">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="30"/>
+          <w:szCs w:val="30"/>
+        </w:rPr>
+        <w:t>资料项目编号：</w:t>
+      </w:r>
+      <w:r w:rsidRPr="008D33A6">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="30"/>
+          <w:szCs w:val="30"/>
+        </w:rPr>
+        <w:t>2.</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+          <w:b/>
+          <w:sz w:val="30"/>
+          <w:szCs w:val="30"/>
+        </w:rPr>
+        <w:t>6.7</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+</w:tr>
+
+		cells = 4
+			paragrahs = 1
+				counter 0, text = "申请分类：临床"
+			paragrahs = 1
+				counter 1, text = "资料项目编号：2.6.7"
+			paragrahs = 1
+				counter 2, text = "资料项目编号：2.6.7"
+			paragrahs = 1
+				counter 3, text = "注册分类：化学药品2.1类"
+<w:tr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidTr="00313E9F">
+  <w:trPr>
+    <w:gridAfter w:val="1"/>
+    <w:wAfter w:w="496" w:type="dxa"/>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="5233" w:type="dxa"/>
+      <w:vAlign w:val="center"/>
+      <w:hideMark/>
+    </w:tcPr>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="00313E9F">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="30"/>
+          <w:szCs w:val="30"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="008D33A6">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="30"/>
+          <w:szCs w:val="30"/>
+        </w:rPr>
+        <w:t>注册分类：化学药品</w:t>
+      </w:r>
+      <w:r w:rsidR="00313E9F">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="30"/>
+          <w:szCs w:val="30"/>
+        </w:rPr>
+        <w:t>2.1</w:t>
+      </w:r>
+      <w:r w:rsidRPr="008D33A6">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="30"/>
+          <w:szCs w:val="30"/>
+        </w:rPr>
+        <w:t>类</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="2202" w:type="dxa"/>
+      <w:vAlign w:val="center"/>
+    </w:tcPr>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="006D2E75">
+      <w:pPr>
+        <w:jc w:val="right"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="30"/>
+          <w:szCs w:val="30"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+  </w:tc>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="1130" w:type="dxa"/>
+      <w:vAlign w:val="center"/>
+    </w:tcPr>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="006D2E75">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="30"/>
+          <w:szCs w:val="30"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+  </w:tc>
+</w:tr>
+
+		cells = 4
+			paragrahs = 1
+			paragrahs = 1
+			paragrahs = 1
+			paragrahs = 1
+<w:tr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidTr="00313E9F">
+  <w:trPr>
+    <w:gridAfter w:val="1"/>
+    <w:wAfter w:w="496" w:type="dxa"/>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="8565" w:type="dxa"/>
+      <w:gridSpan w:val="3"/>
+    </w:tcPr>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="006D2E75"/>
+  </w:tc>
+</w:tr>
+
+		cells = 4
+			paragrahs = 1
+			paragrahs = 1
+			paragrahs = 1
+			paragrahs = 1
+<w:tr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidTr="00313E9F">
+  <w:trPr>
+    <w:gridAfter w:val="1"/>
+    <w:wAfter w:w="496" w:type="dxa"/>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="8565" w:type="dxa"/>
+      <w:gridSpan w:val="3"/>
+    </w:tcPr>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="006D2E75"/>
+  </w:tc>
+</w:tr>
+
+		cells = 4
+			paragrahs = 1
+			paragrahs = 1
+			paragrahs = 1
+			paragrahs = 1
+				counter 4, text = "注射用罗替戈汀山嵛酸酯缓释微球"
+<w:tr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidTr="00313E9F">
+  <w:trPr>
+    <w:gridAfter w:val="1"/>
+    <w:wAfter w:w="496" w:type="dxa"/>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="8565" w:type="dxa"/>
+      <w:gridSpan w:val="3"/>
+    </w:tcPr>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="006D2E75">
+      <w:pPr>
+        <w:spacing w:before="100" w:beforeAutospacing="1" w:after="100" w:afterAutospacing="1" w:line="360" w:lineRule="auto"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:sz w:val="32"/>
+          <w:szCs w:val="32"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+  </w:tc>
+</w:tr>
+
+		cells = 4
+			paragrahs = 1
+				counter 5, text = "注射用罗替戈汀山嵛酸酯缓释微球"
+			paragrahs = 1
+				counter 6, text = "注射用罗替戈汀山嵛酸酯缓释微球"
+			paragrahs = 1
+				counter 7, text = "注射用罗替戈汀山嵛酸酯缓释微球"
+			paragrahs = 1
+				counter 8, text = "（56mg、112mg、224mg、336mg、448mg）"
+<w:tr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w:rsidR="00313E9F" w:rsidRPr="008D33A6" w:rsidTr="00313E9F">
+  <w:trPr>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="9061" w:type="dxa"/>
+      <w:gridSpan w:val="4"/>
+      <w:hideMark/>
+    </w:tcPr>
+    <w:p w:rsidR="00313E9F" w:rsidRPr="00AA4889" w:rsidRDefault="00313E9F" w:rsidP="00313E9F">
+      <w:pPr>
+        <w:spacing w:before="100" w:beforeAutospacing="1" w:after="100" w:afterAutospacing="1" w:line="360" w:lineRule="auto"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="48"/>
+          <w:szCs w:val="48"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00AA4889">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="48"/>
+          <w:szCs w:val="48"/>
+        </w:rPr>
+        <w:t>注射</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AA4889">
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+          <w:b/>
+          <w:sz w:val="48"/>
+          <w:szCs w:val="48"/>
+        </w:rPr>
+        <w:t>用罗替戈汀山嵛酸酯缓释微球</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+</w:tr>
+
+		cells = 4
+			paragrahs = 1
+				counter 9, text = "（56mg、112mg、224mg、336mg、448mg）"
+			paragrahs = 1
+				counter 10, text = "（56mg、112mg、224mg、336mg、448mg）"
+			paragrahs = 1
+				counter 11, text = "（56mg、112mg、224mg、336mg、448mg）"
+			paragrahs = 3
+<w:tr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w:rsidR="00313E9F" w:rsidRPr="008D33A6" w:rsidTr="00313E9F">
+  <w:trPr>
+    <w:trHeight w:val="1260"/>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="9061" w:type="dxa"/>
+      <w:gridSpan w:val="4"/>
+      <w:hideMark/>
+    </w:tcPr>
+    <w:p w:rsidR="00313E9F" w:rsidRDefault="00313E9F" w:rsidP="00313E9F">
+      <w:pPr>
+        <w:jc w:val="center"/>
+      </w:pPr>
+      <w:r w:rsidRPr="00AA4889">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="48"/>
+          <w:szCs w:val="48"/>
+        </w:rPr>
+        <w:t>（</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AA4889">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="44"/>
+          <w:szCs w:val="44"/>
+        </w:rPr>
+        <w:t>56mg</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AA4889">
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+          <w:b/>
+          <w:sz w:val="44"/>
+          <w:szCs w:val="44"/>
+        </w:rPr>
+        <w:t>、</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AA4889">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="44"/>
+          <w:szCs w:val="44"/>
+        </w:rPr>
+        <w:t>112mg</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AA4889">
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+          <w:b/>
+          <w:sz w:val="44"/>
+          <w:szCs w:val="44"/>
+        </w:rPr>
+        <w:t>、</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AA4889">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="44"/>
+          <w:szCs w:val="44"/>
+        </w:rPr>
+        <w:t>224mg</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AA4889">
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+          <w:b/>
+          <w:sz w:val="44"/>
+          <w:szCs w:val="44"/>
+        </w:rPr>
+        <w:t>、</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AA4889">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="44"/>
+          <w:szCs w:val="44"/>
+        </w:rPr>
+        <w:t>336mg</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AA4889">
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+          <w:b/>
+          <w:sz w:val="44"/>
+          <w:szCs w:val="44"/>
+        </w:rPr>
+        <w:t>、</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AA4889">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="44"/>
+          <w:szCs w:val="44"/>
+        </w:rPr>
+        <w:t>448mg</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AA4889">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="48"/>
+          <w:szCs w:val="48"/>
+        </w:rPr>
+        <w:t>）</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+</w:tr>
+
+		cells = 4
+			paragrahs = 3
+			paragrahs = 3
+			paragrahs = 1
+			paragrahs = 1
+<w:tr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidTr="00313E9F">
+  <w:trPr>
+    <w:gridAfter w:val="1"/>
+    <w:wAfter w:w="496" w:type="dxa"/>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="8565" w:type="dxa"/>
+      <w:gridSpan w:val="3"/>
+    </w:tcPr>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="006D2E75">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="9720"/>
+        </w:tabs>
+        <w:spacing w:before="100" w:beforeAutospacing="1" w:after="100" w:afterAutospacing="1" w:line="360" w:lineRule="auto"/>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="006D2E75">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="9720"/>
+        </w:tabs>
+        <w:spacing w:before="100" w:beforeAutospacing="1" w:after="100" w:afterAutospacing="1" w:line="360" w:lineRule="auto"/>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="006D2E75">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="9720"/>
+        </w:tabs>
+        <w:spacing w:before="100" w:beforeAutospacing="1" w:after="100" w:afterAutospacing="1" w:line="360" w:lineRule="auto"/>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+  </w:tc>
+</w:tr>
+
+		cells = 4
+			paragrahs = 1
+			paragrahs = 1
+			paragrahs = 1
+			paragrahs = 1
+<w:tr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidTr="00313E9F">
+  <w:trPr>
+    <w:gridAfter w:val="1"/>
+    <w:wAfter w:w="496" w:type="dxa"/>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="8565" w:type="dxa"/>
+      <w:gridSpan w:val="3"/>
+    </w:tcPr>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="006D2E75">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="9720"/>
+        </w:tabs>
+        <w:spacing w:before="100" w:beforeAutospacing="1" w:after="100" w:afterAutospacing="1" w:line="360" w:lineRule="auto"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+  </w:tc>
+</w:tr>
+
+		cells = 4
+			paragrahs = 1
+			paragrahs = 1
+			paragrahs = 1
+			paragrahs = 1
+<w:tr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidTr="00313E9F">
+  <w:trPr>
+    <w:gridAfter w:val="1"/>
+    <w:wAfter w:w="496" w:type="dxa"/>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="8565" w:type="dxa"/>
+      <w:gridSpan w:val="3"/>
+    </w:tcPr>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="006D2E75">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="9720"/>
+        </w:tabs>
+        <w:spacing w:before="100" w:beforeAutospacing="1" w:after="100" w:afterAutospacing="1" w:line="360" w:lineRule="auto"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+  </w:tc>
+</w:tr>
+
+		cells = 4
+			paragrahs = 1
+			paragrahs = 1
+			paragrahs = 1
+			paragrahs = 1
+<w:tr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidTr="00313E9F">
+  <w:trPr>
+    <w:gridAfter w:val="1"/>
+    <w:wAfter w:w="496" w:type="dxa"/>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="8565" w:type="dxa"/>
+      <w:gridSpan w:val="3"/>
+    </w:tcPr>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="006D2E75">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="9720"/>
+        </w:tabs>
+        <w:spacing w:before="100" w:beforeAutospacing="1" w:after="100" w:afterAutospacing="1" w:line="360" w:lineRule="auto"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+  </w:tc>
+</w:tr>
+
+		cells = 4
+			paragrahs = 1
+			paragrahs = 1
+				counter 12, text = "联系人姓名：由春娜"
+			paragrahs = 1
+				counter 13, text = "联系人姓名：由春娜"
+			paragrahs = 1
+				counter 14, text = "联系人姓名：由春娜"
+<w:tr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidTr="00313E9F">
+  <w:trPr>
+    <w:gridAfter w:val="1"/>
+    <w:wAfter w:w="496" w:type="dxa"/>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="8565" w:type="dxa"/>
+      <w:gridSpan w:val="3"/>
+    </w:tcPr>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="006D2E75">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="9720"/>
+        </w:tabs>
+        <w:spacing w:before="100" w:beforeAutospacing="1" w:after="100" w:afterAutospacing="1" w:line="360" w:lineRule="auto"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+  </w:tc>
+</w:tr>
+
+		cells = 4
+			paragrahs = 1
+				counter 15, text = "联系电话：010-85865101  13910572228"
+			paragrahs = 1
+				counter 16, text = "联系电话：010-85865101  13910572228"
+			paragrahs = 1
+				counter 17, text = "联系电话：010-85865101  13910572228"
+			paragrahs = 1
+				counter 18, text = "联系地址：山东省烟台市高新区科技大道39号"
+<w:tr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidTr="00313E9F">
+  <w:trPr>
+    <w:gridAfter w:val="1"/>
+    <w:wAfter w:w="496" w:type="dxa"/>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="8565" w:type="dxa"/>
+      <w:gridSpan w:val="3"/>
+    </w:tcPr>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="006D2E75">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="9720"/>
+        </w:tabs>
+        <w:spacing w:before="100" w:beforeAutospacing="1" w:after="100" w:afterAutospacing="1" w:line="360" w:lineRule="auto"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+  </w:tc>
+</w:tr>
+
+		cells = 4
+			paragrahs = 1
+				counter 19, text = "联系地址：山东省烟台市高新区科技大道39号"
+			paragrahs = 1
+				counter 20, text = "联系地址：山东省烟台市高新区科技大道39号"
+			paragrahs = 1
+			paragrahs = 1
+<w:tr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidTr="00313E9F">
+  <w:trPr>
+    <w:gridAfter w:val="1"/>
+    <w:wAfter w:w="496" w:type="dxa"/>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="8565" w:type="dxa"/>
+      <w:gridSpan w:val="3"/>
+    </w:tcPr>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="006D2E75">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="9720"/>
+        </w:tabs>
+        <w:spacing w:before="100" w:beforeAutospacing="1" w:after="100" w:afterAutospacing="1" w:line="360" w:lineRule="auto"/>
+        <w:rPr>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="008D33A6">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>联系人姓名：</w:t>
+      </w:r>
+      <w:r w:rsidRPr="008D33A6">
+        <w:rPr>
+          <w:bCs/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>由春娜</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+</w:tr>
+
+		cells = 4
+			paragrahs = 1
+			paragrahs = 1
+				counter 21, text = "申请机构：山东绿叶制药有限公司"
+			paragrahs = 1
+				counter 22, text = "申请机构：山东绿叶制药有限公司"
+			paragrahs = 1
+				counter 23, text = "申请机构：山东绿叶制药有限公司"
+<w:tr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidTr="00313E9F">
+  <w:trPr>
+    <w:gridAfter w:val="1"/>
+    <w:wAfter w:w="496" w:type="dxa"/>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="8565" w:type="dxa"/>
+      <w:gridSpan w:val="3"/>
+    </w:tcPr>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="006D2E75">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="9720"/>
+        </w:tabs>
+        <w:spacing w:before="100" w:beforeAutospacing="1" w:after="100" w:afterAutospacing="1" w:line="360" w:lineRule="auto"/>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="008D33A6">
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>联系电话：</w:t>
+      </w:r>
+      <w:r w:rsidRPr="008D33A6">
+        <w:rPr>
+          <w:bCs/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>010-85865101  13910572228</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+</w:tr>
+
+		cells = 0
+<w:tr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidTr="00313E9F">
+  <w:trPr>
+    <w:gridAfter w:val="1"/>
+    <w:wAfter w:w="496" w:type="dxa"/>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="8565" w:type="dxa"/>
+      <w:gridSpan w:val="3"/>
+    </w:tcPr>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="006D2E75">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="9720"/>
+        </w:tabs>
+        <w:spacing w:before="100" w:beforeAutospacing="1" w:after="100" w:afterAutospacing="1" w:line="360" w:lineRule="auto"/>
+        <w:rPr>
+          <w:bCs/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="008D33A6">
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>联系地址：</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00925CE6">
+        <w:rPr>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>山东省</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00925CE6">
+        <w:rPr>
+          <w:bCs/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>烟台市高新区科技大道</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00925CE6">
+        <w:rPr>
+          <w:bCs/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>39</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00925CE6">
+        <w:rPr>
+          <w:bCs/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+        <w:t>号</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+</w:tr>
+
+		cells = 0
+<w:tr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidTr="00313E9F">
+  <w:trPr>
+    <w:gridAfter w:val="1"/>
+    <w:wAfter w:w="496" w:type="dxa"/>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="8565" w:type="dxa"/>
+      <w:gridSpan w:val="3"/>
+      <w:hideMark/>
+    </w:tcPr>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidRDefault="00DD0749" w:rsidP="006D2E75">
+      <w:pPr>
+        <w:tabs>
+          <w:tab w:val="left" w:pos="9720"/>
+        </w:tabs>
+        <w:spacing w:before="100" w:beforeAutospacing="1" w:after="100" w:afterAutospacing="1" w:line="360" w:lineRule="auto"/>
+        <w:rPr>
+          <w:bCs/>
+          <w:sz w:val="28"/>
+          <w:szCs w:val="28"/>
+        </w:rPr>
+      </w:pPr>
+    </w:p>
+  </w:tc>
+</w:tr>
+
+		cells = 0
+<w:tr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w:rsidR="00DD0749" w:rsidRPr="008D33A6" w:rsidTr="00313E9F">
+  <w:trPr>
+    <w:gridAfter w:val="1"/>
+    <w:wAfter w:w="496" w:type="dxa"/>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="8565" w:type="dxa"/>
+      <w:gridSpan w:val="3"/>
+      <w:hideMark/>
+    </w:tcPr>
+    <w:p w:rsidR="00DD0749" w:rsidRPr="00E0656E" w:rsidRDefault="00DD0749" w:rsidP="006D2E75">
+      <w:pPr>
+        <w:spacing w:line="360" w:lineRule="auto"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:sz w:val="32"/>
+          <w:szCs w:val="32"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="00E0656E">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="32"/>
+          <w:szCs w:val="32"/>
+        </w:rPr>
+        <w:t>申请机构：山东绿叶制药有限公司</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+</w:tr>
+
+		cells = 0
+	rows = 13
+<w:tr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" w:rsidR="00A3381B" w:rsidRPr="008A4980" w:rsidTr="002624E1">
+  <w:trPr>
+    <w:gridAfter w:val="1"/>
+    <w:wAfter w:w="5" w:type="pct"/>
+    <w:jc w:val="center"/>
+  </w:trPr>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="606" w:type="pct"/>
+      <w:vMerge w:val="restart"/>
+      <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+      <w:vAlign w:val="center"/>
+    </w:tcPr>
+    <w:p w:rsidR="00A3381B" w:rsidRPr="008A4980" w:rsidRDefault="00A3381B" w:rsidP="00C977EC">
+      <w:pPr>
+        <w:spacing w:line="240" w:lineRule="exact"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="21"/>
+          <w:szCs w:val="21"/>
+          <w:u w:val="single"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="008A4980">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="21"/>
+          <w:szCs w:val="21"/>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t>试验类型</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="398" w:type="pct"/>
+      <w:vMerge w:val="restart"/>
+      <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+      <w:vAlign w:val="center"/>
+    </w:tcPr>
+    <w:p w:rsidR="00A3381B" w:rsidRPr="008A4980" w:rsidRDefault="00A3381B" w:rsidP="00A3381B">
+      <w:pPr>
+        <w:spacing w:line="240" w:lineRule="exact"/>
+        <w:ind w:leftChars="-50" w:left="-120" w:rightChars="-50" w:right="-120"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="21"/>
+          <w:szCs w:val="21"/>
+          <w:u w:val="single"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="008A4980">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="21"/>
+          <w:szCs w:val="21"/>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t>种属和品系</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="374" w:type="pct"/>
+      <w:vMerge w:val="restart"/>
+      <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+      <w:vAlign w:val="center"/>
+    </w:tcPr>
+    <w:p w:rsidR="00A3381B" w:rsidRPr="008A4980" w:rsidRDefault="00A3381B" w:rsidP="00C977EC">
+      <w:pPr>
+        <w:spacing w:line="240" w:lineRule="exact"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="21"/>
+          <w:szCs w:val="21"/>
+          <w:u w:val="single"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="008A4980">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="21"/>
+          <w:szCs w:val="21"/>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t>给药方法</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="861" w:type="pct"/>
+      <w:vMerge w:val="restart"/>
+      <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+      <w:vAlign w:val="center"/>
+    </w:tcPr>
+    <w:p w:rsidR="00A3381B" w:rsidRPr="008A4980" w:rsidRDefault="00A3381B" w:rsidP="00C977EC">
+      <w:pPr>
+        <w:spacing w:line="240" w:lineRule="exact"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="21"/>
+          <w:szCs w:val="21"/>
+          <w:u w:val="single"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="008A4980">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="21"/>
+          <w:szCs w:val="21"/>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t>给药周期</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="1066" w:type="pct"/>
+      <w:vMerge w:val="restart"/>
+      <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+      <w:vAlign w:val="center"/>
+    </w:tcPr>
+    <w:p w:rsidR="00A3381B" w:rsidRPr="008A4980" w:rsidRDefault="00A3381B" w:rsidP="001F4DE1">
+      <w:pPr>
+        <w:spacing w:line="240" w:lineRule="exact"/>
+        <w:ind w:leftChars="-50" w:left="-120" w:rightChars="-50" w:right="-120"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="21"/>
+          <w:szCs w:val="21"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="008A4980">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="21"/>
+          <w:szCs w:val="21"/>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t>剂量</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="315" w:type="pct"/>
+      <w:vMerge w:val="restart"/>
+      <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+      <w:vAlign w:val="center"/>
+    </w:tcPr>
+    <w:p w:rsidR="00A3381B" w:rsidRPr="008A4980" w:rsidRDefault="00A3381B" w:rsidP="00A3381B">
+      <w:pPr>
+        <w:spacing w:line="240" w:lineRule="exact"/>
+        <w:ind w:leftChars="-50" w:left="-120" w:rightChars="-50" w:right="-120"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="21"/>
+          <w:szCs w:val="21"/>
+          <w:u w:val="single"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="008A4980">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="21"/>
+          <w:szCs w:val="21"/>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t>GLP</w:t>
+      </w:r>
+      <w:r w:rsidRPr="008A4980">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="21"/>
+          <w:szCs w:val="21"/>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t>依从性</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="522" w:type="pct"/>
+      <w:vMerge w:val="restart"/>
+      <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+      <w:vAlign w:val="center"/>
+    </w:tcPr>
+    <w:p w:rsidR="00A3381B" w:rsidRPr="008A4980" w:rsidRDefault="00A3381B" w:rsidP="00C977EC">
+      <w:pPr>
+        <w:spacing w:line="240" w:lineRule="exact"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="21"/>
+          <w:szCs w:val="21"/>
+          <w:u w:val="single"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="008A4980">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="21"/>
+          <w:szCs w:val="21"/>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t>试验机构</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="420" w:type="pct"/>
+      <w:vMerge w:val="restart"/>
+      <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+      <w:vAlign w:val="center"/>
+    </w:tcPr>
+    <w:p w:rsidR="00A3381B" w:rsidRPr="008A4980" w:rsidRDefault="00A3381B" w:rsidP="00C977EC">
+      <w:pPr>
+        <w:spacing w:line="240" w:lineRule="exact"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="21"/>
+          <w:szCs w:val="21"/>
+          <w:u w:val="single"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="008A4980">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="21"/>
+          <w:szCs w:val="21"/>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t>试验编号</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+  <w:tc>
+    <w:tcPr>
+      <w:tcW w:w="433" w:type="pct"/>
+      <w:gridSpan w:val="2"/>
+      <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+      <w:vAlign w:val="center"/>
+    </w:tcPr>
+    <w:p w:rsidR="00A3381B" w:rsidRPr="008A4980" w:rsidRDefault="00A3381B" w:rsidP="00C977EC">
+      <w:pPr>
+        <w:spacing w:line="240" w:lineRule="exact"/>
+        <w:jc w:val="center"/>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="21"/>
+          <w:szCs w:val="21"/>
+          <w:u w:val="single"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r w:rsidRPr="008A4980">
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="21"/>
+          <w:szCs w:val="21"/>
+          <w:u w:val="single"/>
+        </w:rPr>
+        <w:t>位置</w:t>
+      </w:r>
+    </w:p>
+  </w:tc>
+</w:tr>
+

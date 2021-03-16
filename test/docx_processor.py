@@ -1,4 +1,4 @@
-#from ..src.docx_processor import DocxProcessor
+from ..src.docx_processor import DocxProcessor
 from ..configs.config import generate_project_config
 import pytest
 
