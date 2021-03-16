@@ -41,11 +41,12 @@ def generate_docs_config(docs_array, source_lang_code, target_lang_code):
             for doc in docs_array
             ]
 
-def generate_project_config(name, engine, docs_array, source_lang_code, target_lang_code):
+def generate_project_config(name, engine, docs_array, source_lang_code, target_lang_code, glossary=""):
     return {
             "name": name,
             "engine": engine,
             "docs": generate_docs_config(docs_array, source_lang_code, target_lang_code),
+            "glossary": glossary
             }
 
 

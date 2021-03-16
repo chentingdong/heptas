@@ -16,7 +16,8 @@ RUN apt-get update \
 RUN python -m pip install --upgrade pip
 
 # google cloud
-#RUN snap install google-cloud-sdk --classic
+RUN curl -sSL https://sdk.cloud.google.com | bash
+ENV PATH $PATH:/root/google-cloud-sdk/bin
 #RUN gcloud init
 
 RUN mkdir /app

@@ -1,10 +1,10 @@
-from ..src.docx_processor import DocxProcessor
+#from ..src.docx_processor import DocxProcessor
 from ..configs.config import generate_project_config
 import pytest
 
-def test_docx_processor(project_config_pro4):
+def test_docx_processor(project_config_gc):
 
-    project = project_config_pro4
+    project = project_config_gc
     for doc in project["docs"]:
         processor = DocxProcessor(
             doc["file"],
@@ -61,11 +61,11 @@ def project_config_gc():
                 "targetLanguageCode": "en",
                 "file": "NC PD Report Sample.docx",
             },
-            {
-                "sourceLanguageCode": "en",
-                "targetLanguageCode": "zh-cn",
-                "file": "NC Tox Report Sample.docx",
-            },
+            #{
+            #    "sourceLanguageCode": "en",
+            #    "targetLanguageCode": "zh-cn",
+            #    "file": "NC Tox Report Sample.docx",
+            #},
         ],
     }
     return project
