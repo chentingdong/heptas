@@ -3,7 +3,6 @@ from ..configs.config import generate_project_config
 import pytest
 
 def test_docx_processor(project_config_gc):
-
     project = project_config_gc
     for doc in project["docs"]:
         processor = DocxProcessor(
