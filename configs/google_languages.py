@@ -2,6 +2,13 @@ SPECIAL_CASES = {
     "ee": "et",
 }
 
+GOOGLE_GLOSSARY = {
+        "project_id": "415574831314",
+        "location" : "us-central1",
+        "parent" : "projects/415574831314/locations/us-central1",
+        "glossary_id" : "bt-zh-en-LetPub-glossary",
+        }
+
 GOOGLE_LANGUAGES = {
     "af": "afrikaans",
     "sq": "albanian",

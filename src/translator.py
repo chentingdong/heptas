@@ -5,11 +5,14 @@ from googletrans import Translator as GoogleTrans
 import boto3
 from ..configs.config import cfg
 from ..configs.google_languages import GOOGLE_LANGUAGES
+from ..configs.google_languages import GOOGLE_GLOSSARY
 from ..configs.aws_languages import AWS_LANGUAGES
 from .tokenizor import Tokenizer
 from .logger import translation_logger as logger
 import six
-from google.cloud import translate_v2 as GCTranslate
+#from google.cloud import translate_v2 as GCTranslate
+from google.cloud import translate as GCTranslate
+
 
 class Translator(object):
     def __init__(
@@ -18,6 +21,7 @@ class Translator(object):
         engine=cfg["translate"]["engine"],
         sourceLanguageCode=cfg["translate"]["sourceLanguageCode"],
         targetLanguageCode=cfg["translate"]["targetLanguageCode"],
+        glossary="",
     ):
         logger.info("Translation engine {} loaded.".format(engine))
         if engine == "google":
@@ -30,7 +34,8 @@ class Translator(object):
         elif engine == "gc" or engine == 'Google Cloud':
             self.translator = GoogleCloudTranslator(
                 sourceLanguageCode=sourceLanguageCode,
-                targetLanguageCode=targetLanguageCode
+                targetLanguageCode=targetLanguageCode,
+                glossary=glossary,
             )
 
         elif engine == "bt" or engine == "biotranscribe":
@@ -40,6 +45,53 @@ class Translator(object):
         return self.translator.translate(text)
 
 class GoogleCloudTranslator:
+    def __init__(
+        self,
+        sourceLanguageCode=cfg["translate"]["sourceLanguageCode"],
+        targetLanguageCode=cfg["translate"]["targetLanguageCode"],
+        glossary = "",
+    ):
+        self.translator = GCTranslate.TranslationServiceClient()
+        self.sourceLanguageCode = sourceLanguageCode
+        self.targetLanguageCode = targetLanguageCode
+        if glossary:
+            g = self.translator.glossary_path(
+                GOOGLE_GLOSSARY["project_id"],
+                GOOGLE_GLOSSARY["location"],
+                glossary,
+                )
+            self.g_config = GCTranslate.TranslateTextGlossaryConfig(glossary=g)
+        else:
+            g = self.translator.glossary_path(
+                GOOGLE_GLOSSARY["project_id"],
+                GOOGLE_GLOSSARY["location"],
+                GOOGLE_GLOSSARY["glossary_id"],
+                )
+            self.g_config = GCTranslate.TranslateTextGlossaryConfig(glossary=g)
+
+
+    def translate(self, text) -> str:
+        if len(text) == 0:
+            return ""
+        try:
+            response = self.translator.translate_text(
+                request={
+                    "contents": [text],
+                    "target_language_code": self.targetLanguageCode,
+                    "source_language_code": self.sourceLanguageCode,
+                    "parent": GOOGLE_GLOSSARY['parent'],
+                    "glossary_config": self.g_config,
+                    }
+                )
+            result = response.glossary_translations[0].translated_text
+
+        except Exception as error:
+            logger.error("GOOGLE Cloud translation failed, {}".format(error))
+            result = " [N.A] "
+        return result
+
+
+class GoogleCloudTranslator_v2:
     def __init__(
         self,
         sourceLanguageCode=cfg["translate"]["sourceLanguageCode"],
