@@ -2,8 +2,8 @@ from ..src.docx_processor import DocxProcessor
 from ..configs.config import generate_project_config
 import pytest
 
-def test_docx_processor(project_config_gc):
-    project = project_config_gc
+def test_docx_processor(project_config_pro4):
+    project = project_config_pro4
     for doc in project["docs"]:
         processor = DocxProcessor(
             doc["file"],
@@ -26,7 +26,7 @@ def test_fixture():
 @pytest.fixture
 def project_config_pro4():
     docs = [
-            'XKH001_China PIND (2.4 NC Overview)_For translation use only - Part 1.docx'
+            'XKH001_China PIND (2.4 NC Overview)_For translation use only - Part 2.docx'
             ]
 
     return generate_project_config("project 4", 'gc', docs, 'en', 'zh-cn')

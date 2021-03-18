@@ -10,8 +10,9 @@ from ..configs.aws_languages import AWS_LANGUAGES
 from .tokenizor import Tokenizer
 from .logger import translation_logger as logger
 import six
-#from google.cloud import translate_v2 as GCTranslate
+from google.cloud import translate_v2 as GCTranslate_v2
 from google.cloud import translate as GCTranslate
+
 
 
 class Translator(object):
@@ -21,7 +22,7 @@ class Translator(object):
         engine=cfg["translate"]["engine"],
         sourceLanguageCode=cfg["translate"]["sourceLanguageCode"],
         targetLanguageCode=cfg["translate"]["targetLanguageCode"],
-        glossary="",
+        glossary=None,
     ):
         logger.info("Translation engine {} loaded.".format(engine))
         if engine == "google":
@@ -32,19 +33,24 @@ class Translator(object):
                 targetLanguageCode=targetLanguageCode
             )
         elif engine == "gc" or engine == 'Google Cloud':
-            self.translator = GoogleCloudTranslator(
-                sourceLanguageCode=sourceLanguageCode,
-                targetLanguageCode=targetLanguageCode,
-                glossary=glossary,
-            )
-
+            if glossary:
+                self.translator = GoogleCloudTranslator_with_glossary(
+                    sourceLanguageCode=sourceLanguageCode,
+                    targetLanguageCode=targetLanguageCode,
+                    glossary=glossary,
+                )
+            else:
+                self.translator = GoogleCloudTranslator(
+                    sourceLanguageCode=sourceLanguageCode,
+                    targetLanguageCode=targetLanguageCode,
+                    )
         elif engine == "bt" or engine == "biotranscribe":
             self.translator = BTTranslator(model_dir)
 
     def translate(self, text):
         return self.translator.translate(text)
 
-class GoogleCloudTranslator:
+class GoogleCloudTranslator_with_glossary:
     def __init__(
         self,
         sourceLanguageCode=cfg["translate"]["sourceLanguageCode"],
@@ -91,13 +97,13 @@ class GoogleCloudTranslator:
         return result
 
 
-class GoogleCloudTranslator_v2:
+class GoogleCloudTranslator:
     def __init__(
         self,
         sourceLanguageCode=cfg["translate"]["sourceLanguageCode"],
         targetLanguageCode=cfg["translate"]["targetLanguageCode"],
     ):
-        self.translator = GCTranslate.Client()
+        self.translator = GCTranslate_v2.Client()
         self.sourceLanguageCode = sourceLanguageCode
         self.targetLanguageCode = targetLanguageCode
 
