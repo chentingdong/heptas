@@ -26,10 +26,18 @@ def test_fixture():
 @pytest.fixture
 def project_config_pro4():
     docs = [
-            'XKH001_China PIND (2.4 NC Overview)_For translation use only - Part 2.docx'
+            #'XKH001_China PIND (2.4 NC Overview)_For translation use only - Part 2.docx'
+            'XKH001_China 2.2 Intro_V1.docx',
+            'XKH001_China 2.6.1 Intro_V1.docx',
+            'XKH001_China 2.6.2 PD Written Summry_V1.docx',
+            'XKH001_China 2.6.4 PK Written Summry_V1.docx',
+            'XKH001_China 2.6.5 PK Tabulated Summry_V1.docx',
+            'XKH001_China 2.6.6 Tox Written Summary_V1.docx',
+            'XKH001_China 2.6.7 Tox tabulated Summary_V1.docx',
+            'XKH001_China_2.6.3 PD Tabulated Sum_V1.docx',
             ]
 
-    return generate_project_config("project 4", 'gc', docs, 'en', 'zh-cn')
+    return generate_project_config("project 4", 'gc', docs, 'en', 'zh-cn', glossary="")
 
 
 @pytest.fixture
