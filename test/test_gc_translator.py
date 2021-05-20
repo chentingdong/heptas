@@ -1,26 +1,14 @@
 from google.cloud import translate_v2
 from ..src.translator import Translator
-
-
-#create function to translate text to English
-def test_translated(text='Hola amigo', target='en'):
-
-    translate_client = translate_v2.Client()
-    result = translate_client.translate(text, target_language=target)
-
-    print('Translation', result['translatedText'])
-    print('Source language: ', result['detectedSourceLanguage'])
-    assert True
-
-def test_translate_with_glossary(text='今晚的月亮真圆。'):
+def test_translate_with_glossary(text='持续释放', source='zh-cn', target='en'):
     translator = Translator(
         engine='gc',
-        sourceLanguageCode='zh-cn',
-        targetLanguageCode='en',
+        sourceLanguageCode=source,
+        targetLanguageCode=target,
         glossary='bt-zh-en-LetPub-glossary'
         )
     result = translator.translate(text)
-    print(result)
+    print('result=', result)
     print("\n")
 
     #for translation in result.translations:
@@ -30,8 +18,7 @@ def test_translate_with_glossary(text='今晚的月亮真圆。'):
 
     assert True
 
-#text_test = 'Hola amigo'
-#translated_test(text_test)
 
-#text_test = '今晚的月亮真圆。'
-#translate_with_glossary(text_test)
+
+
+
