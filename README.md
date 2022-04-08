@@ -1,6 +1,5 @@
 # project
-"We don't know if they understand the difference between weapon and tool"
-- Arrival, 2016. 
+"We don't know if they understand the difference between weapon and tool" - Arrival, 2016. 
 
 # Install
 ## Local 
