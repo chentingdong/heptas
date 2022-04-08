@@ -1,5 +1,7 @@
 # project
-Name heptas comes from the movie "Arrival", 2016. 
+"We don't know if they understand the difference between weapon and tool"
+- Arrival, 2016. 
+
 # Install
 ## Local 
 For local development, we use venv. Python version 3.7.3.
